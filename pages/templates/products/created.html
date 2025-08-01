@@ -1,0 +1,10 @@
+{% extends 'pages/base.html' %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+<h1>Product Created Successfully</h1>
+<p>Name: {{ product.name }}</p>
+<p>Price: {{ product.price }}</p>
+<a href="{% url 'index' %}">Back to Product List</a>
+{% endblock %}
